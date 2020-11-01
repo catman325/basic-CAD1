@@ -8,9 +8,9 @@ What was the assighment
 
 ##Picture
 
-![rosie1](images/rosie1.jpg)
+![Screenshot 2020-11-01 at 1.24.59 PM.png](images/Screenshot 2020-11-01 at 1.24.59 PM.png)
 
-<img src="images/rosie1.jpg"alt="rosie1"wdth="100"height="100"
+<img src="images/Screenshot 2020-11-01 at 1.24.59 PM.png"alt="Screenshot 2020-11-01 at 1.24.59 PM.png"wdth="100"height="100"
 
 ##code (if assigment involves coe
 

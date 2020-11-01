@@ -8,8 +8,9 @@ What was the assighment
 
 ##Picture
 
+![rosie1](images/rosie1.jpg)
 
-
+<img src="images/rosie1.jpg"alt="rosie1"wdth="100"height="100"
 
 ##code (if assigment involves coe
 

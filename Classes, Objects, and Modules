@@ -1,0 +1,43 @@
+description
+the led light is souposed to gow red 
+then glow green
+then glow blue 
+and comtenue in this pattern
+but both of my led bulbe where messed up 
+evidence 
+# Write your code here :-)
+import time
+import board
+import simpleio
+import neopixel
+import adafruit_hcsr04
+
+sonar = adafruit_hcsr04.HCSR04(trigger_pin=board.D5, echo_pin=board.D6)
+RED = 0;
+GREEN = 0;
+BLUE = 0;
+
+pixel = neopixel.NeoPixel(board.NEOPIXEL,1)
+
+while True:
+    #pixel.fill((RED,GREEN,BLUE))
+    if sonar.distance >=5 and sonar.distance <=20:
+        RED = simpleio.map_range(sonar.distance,5,20,255,0)
+        GREEN = 0
+        BLUE = simpleio.map_range(sonar.distance,5,20,0,255)
+    elif sonar.distance > 20 and sonar.distance <= 35:
+        RED = 0
+        GREEN = simpleio.map_range(sonar.distance,20,35,0,255)
+        BLUE = simpleio.map_range(sonar.distance,20,35,255,0)
+    else:
+       RED = 255
+       GREEN = 255
+       BLUE = 255
+    pixel.fill((RED,GREEN,BLUE))
+    print(sonar.distance)
+    time.sleep(0.5)
+image
+https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn.sparkfun.com%2Fassets%2Flearn_tutorials%2F3%2F1%2F0%2FArduino_circuit_02_01.png&imgrefurl=https%3A%2F%2Flearn.sparkfun.com%2Ftutorials%2Fsik-experiment-guide-for-arduino---v32%2Fexperiment-3-driving-an-rgb-led&tbnid=0JOh5K_lyKoXOM&vet=12ahUKEwjzo42bi8XuAhXHMFMKHeHiBWYQMygBegUIARCsAQ..i&docid=X0LiPY1KB_U2wM&w=2073&h=1047&q=rgb%20led%20light%20arduino&safe=active&ved=2ahUKEwjzo42bi8XuAhXHMFMKHeHiBWYQMygBegUIARCsAQ
+reflection
+it was very chalenging to do because of my led bullbs where messed up 
+but affer a while i got the code to work but the led lights still dont work 

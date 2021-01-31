@@ -1,0 +1,66 @@
+decsripition
+first the 2 outer red lights turn on 
+then the middle red light turnn on 
+then the 2 outter redlights turn on
+then the middle red light turnn on 
+then the 2 outter redlights turn on
+then the middle red light turnn on 
+then the 2 outter redlights turn on
+then the middle red light turnn on 
+then the 2 outter redlights turn on
+then the middle red light turnn on 
+then the middle red light turnn on abd the 3 blue lights 
+then the middle red light turnn on abd the 3 blue lights 
+then the middle red light turnn on abd the 3 blue lights 
+then the middle red light turnn on abd the 3 blue lights 
+then the middle red light turnn on abd the 3 blue lights 
+then the red light on the right turns on 
+then the middle red light turns on 
+then the left red light turns on 
+then the red light on the right turns on 
+then the middle red light turns on 
+then the left red light turns on 
+then the red light on the right turns on 
+then the middle red light turns on 
+then the left red light turns on 
+then the red light on the right turns on 
+then the middle red light turns on 
+then the left red light turns on 
+then the red light on the right turns on 
+then the middle red light turns on 
+then the left red light turns on 
+then the 3 blue light and the red light on the left turn on
+then the midle blue light and the left red light turn on 
+then the 2 outer blue light and the left red light turn on 
+then the right blue light and the left red light turn on 
+then the left blue light and the left red light turn on 
+then the 2 inner blue lights and the right red light turns on 
+then the right blue light and the left red light turns on 
+then the 2 inner blue lights and the left red light turn on
+then the 2 outer bule lights and the left red light turs on 
+then all blue lights and the left red light turns on 
+then the right blur light and the left red light turns on 
+then the 2 outter blue light and the left red light turns on 
+then the left red light turns on 
+then the left blue light and the left red light turns on 
+then the middle blue light and the left red light turns on  
+then the left red light turns on
+then the 2 outer blue lights and the left red light turns on 
+then the left blue and the left red light turns on 
+evidence 
+from fancyLED import FancyLED
+import board
+
+fancy1 = FancyLED(board.D2,board.D3,board.D4)
+#fancy2 = FancyLED(board.D5,board.D6,board.D7)
+
+while True:
+    fancy1.alternate()
+    #fancy2.blink()
+    fancy1.chase()
+    #fancy2.sparkle()
+
+image 
+https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.arduino.cc%2Fen%2Fuploads%2FTutorial%2FBarGraph_bb.png&imgrefurl=https%3A%2F%2Fwww.arduino.cc%2Fen%2FTutorial%2FBuiltInExamples%2FBarGraph&tbnid=LL522AkPKrh40M&vet=12ahUKEwiKlJLAk8XuAhUCNVMKHc_YDXoQMygFegUIARCwAQ..i&docid=1b7e7gJ4Fx8fNM&w=1023&h=573&q=multiple%20led%20wired%20arduino&safe=active&ved=2ahUKEwiKlJLAk8XuAhUCNVMKHc_YDXoQMygFegUIARCwAQ
+reflection
+it was really hard to code so i used google and it helped a lot the wireing was also kinda hard so i used google to help we wire 

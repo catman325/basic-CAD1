@@ -8,8 +8,46 @@ when your hand is 25cm away from the ultorsoundic sencor then the light is mediu
 when your hand is 27.5cm away from the ultorsoundic sencor then the light is teal
 when your hand is 30cm away from the ultorsoundic sencor then the light is green\teal
 when your hand is 35cm away from the ultorsoundic sencor then the light is green
-evide
-https://mail.google.com/mail/u/0?ui=2&ik=928c58ab5f&attid=0.1&permmsgid=msg-f:1690364820620053142&th=177561d931e00a96&view=att&disp=safe&realattid=f_kkkhevz70nce
+evidince
+# you don't need an __init__ method, but it is common for stuff that runs at instantiaion
+     def __init__(self, red, green, blue):
+          self.led1 = DigitalInOut(red)
+          self.led1.direction = Direction.OUTPUT
+          self.led2 = DigitalInOut(green)
+          self.led2.direction = Direction.OUTPUT
+          self.led3 = DigitalInOut(blue)
+          self.led3.direction = Direction.OUTPUT
+
+     #
+     def red(self):
+          self.led1.value = True
+          self.led2.value = False
+          self.led3.value = False
+
+     def green(self):
+          self.led1.value = False
+          self.led2.value = True
+          self.led3.value = False
+
+    def blue(self):
+          self.led1.value = False
+          self.led2.value = False
+          self.led3.value = True
+
+    def cyan(self):
+          self.led1.value = False
+          self.led2.value = True
+          self.led3.value = True
+
+    def magenta(self):
+          self.led1.value = True
+          self.led2.value = False
+          self.led3.value = True
+
+    def yellow(self):
+          self.led1.value = True
+          self.led2.value = True
+          self.led3.value = False
 image
 https://www.google.com/imgres?imgurl=https%3A%2F%2Fhowtomechatronics.com%2Fwp-content%2Fuploads%2F2015%2F07%2FUltrasonic-Sensor-Cirucit-Schematics-04.png&imgrefurl=https%3A%2F%2Fhowtomechatronics.com%2Ftutorials%2Farduino%2Fultrasonic-sensor-hc-sr04%2F&tbnid=fE_NvQeIAP-3hM&vet=12ahUKEwi6lqPK_8TuAhUJQlMKHaawDYAQMygCegUIARDbAQ..i&docid=txEDXBaF4chCAM&w=650&h=495&q=ultrasonic%20sensor%20arduino&safe=active&ved=2ahUKEwi6lqPK_8TuAhUJQlMKHaawDYAQMygCegUIARDbAQ
 reflection
